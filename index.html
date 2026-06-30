@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caredott — Always there. Trusted in-home care for the people you love.</title>
+  <meta name="description" content="Caredott brings background-checked, certified caregivers into the home — matched to the person, not just the task, with every visit visible from your phone. Book a free visit." />
+  <meta name="theme-color" content="#F6F3ED" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Caredott — Always there" />
+  <meta property="og:description" content="Trusted in-home caregivers, matched to the person and visible to family every day." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Newsreader:ital,opsz,wght@1,6..72,300..500&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","additionalType":"https://schema.org/MedicalBusiness","name":"Caredott","description":"In-home care: personal care, skilled nursing, companionship, memory care, recovery and respite.","telephone":"+1-800-227-3368","areaServed":"United States","priceRange":"$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"2841"}}
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Bricolage Grotesque"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            serif: ['Newsreader', 'Georgia', 'serif'],
+          },
+          colors: {
+            paper:  { DEFAULT: '#F6F3ED', deep: '#EFEAE0' },
+            ink:    { DEFAULT: '#191510', soft: '#5C544A', faint: '#8A8278' },
+            rose:   { DEFAULT: '#C24A5E', deep: '#A8364B', btn: '#B23E52' },
+            line:   '#E1DACC',
+          },
+          letterSpacing: { tightest: '-0.045em' },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #F6F3ED; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    .serif-i { font-family: 'Newsreader', Georgia, serif; font-style: italic; font-weight: 300; }
+
+    /* the dott — brand signature */
+    .dott { display: inline-block; width: .62em; height: .62em; border-radius: 999px; background: #C24A5E; vertical-align: baseline; margin-left: .04em; }
+    .dott-sm { display: inline-block; width: 7px; height: 7px; border-radius: 999px; background: #C24A5E; }
+
+    /* hero line reveal */
+    .hl { display: block; opacity: 0; transform: translateY(0.5em); animation: hlrise 0.95s cubic-bezier(.22,.7,.2,1) forwards; }
+    @keyframes hlrise { to { opacity: 1; transform: none; } }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    .row-link .arr { opacity: 0; transform: translateX(-6px); transition: opacity .3s ease, transform .3s ease; }
+    .row-link:hover .arr { opacity: 1; transform: none; }
+    .row-link:hover .row-name { color: #A8364B; }
+
+    .ul-rose { background-image: linear-gradient(#C24A5E,#C24A5E); background-size: 0% 1.5px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .35s ease; }
+    .ul-rose:hover { background-size: 100% 1.5px; }
+
+    .nav-wrap { transition: background-color .35s ease, border-color .35s ease; border-bottom: 1px solid transparent; }
+    .nav-scrolled { background: rgba(246,243,237,.85); backdrop-filter: blur(12px); border-color: #E1DACC; }
+
+    .btn-rose { transition: transform .25s ease, background-color .25s ease; }
+    .btn-rose:hover { transform: translateY(-2px); background-color: #A8364B; }
+
+    :focus-visible { outline: 3px solid #C24A5E; outline-offset: 3px; border-radius: 4px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .hl, .reveal { animation: none !important; opacity: 1 !important; transform: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+
+<body class="font-sans text-ink antialiased selection:bg-rose/20">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-[100] focus:top-4 focus:left-4 focus:bg-ink focus:text-paper focus:px-5 focus:py-3 focus:rounded-full focus:font-semibold">Skip to content</a>
+
+  <!-- HEADER -->
+  <header id="hdr" class="nav-wrap fixed top-0 inset-x-0 z-50">
+    <nav class="mx-auto max-w-[1240px] px-6 sm:px-10 h-[76px] flex items-center justify-between" aria-label="Primary">
+      <a href="#" class="text-[1.4rem] font-extrabold tracking-tightest text-ink" aria-label="Caredott home">Caredott<span class="dott-sm align-baseline ml-0.5"></span></a>
+
+      <div class="hidden md:flex items-center gap-9 text-[.95rem] font-medium text-ink-soft">
+        <a href="#care" class="ul-rose hover:text-ink transition-colors">Care</a>
+        <a href="#how" class="ul-rose hover:text-ink transition-colors">How it works</a>
+        <a href="#stories" class="ul-rose hover:text-ink transition-colors">Stories</a>
+        <a href="tel:+18002273368" class="ul-rose hover:text-ink transition-colors">1-800-CARE-DOT</a>
+      </div>
+
+      <a href="#book" class="btn-rose inline-flex items-center rounded-full bg-rose-btn px-5 py-2.5 text-[.92rem] font-semibold text-white">Book a free visit</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="mx-auto max-w-[1240px] px-6 sm:px-10 pt-[150px] sm:pt-[190px] pb-24 sm:pb-32">
+      <div class="grid lg:grid-cols-[1fr_auto] gap-14 lg:gap-16 items-end">
+        <div>
+          <h1 class="font-extrabold tracking-tightest leading-[0.92] text-[clamp(3.4rem,10vw,7.4rem)]">
+            <span class="hl" style="animation-delay:.05s">Always there<span class="dott"></span></span>
+            <span class="hl serif-i text-ink-soft text-[clamp(2.3rem,6.4vw,4.6rem)] leading-[1] block mt-2 sm:mt-3" style="animation-delay:.18s">even when you can’t&nbsp;be.</span>
+          </h1>
+
+          <p class="hl max-w-xl text-[1.15rem] sm:text-[1.25rem] leading-relaxed text-ink-soft mt-8" style="animation-delay:.32s">
+            Caredott brings trusted, background-checked caregivers into the home — matched to the person, not just the task. And you see every visit, right from your phone.
+          </p>
+
+          <div class="hl flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mt-9" style="animation-delay:.44s">
+            <a href="#book" class="btn-rose inline-flex items-center justify-center rounded-full bg-rose-btn px-8 py-4 text-[1.05rem] font-semibold text-white">Book a free visit</a>
+            <a href="tel:+18002273368" class="inline-flex items-center gap-2 text-[1.05rem] font-medium text-ink ul-rose self-start sm:self-auto">
+              or call <span class="text-rose-deep">1-800-CARE-DOT</span>
+            </a>
+          </div>
+
+          <p class="hl text-[.92rem] text-ink-faint mt-9" style="animation-delay:.52s">
+            <span class="text-rose">★</span> 4.9 from 2,800+ families &nbsp;·&nbsp; Licensed &amp; background-checked caregivers
+          </p>
+        </div>
+
+        <!-- quiet human proof, type only -->
+        <aside class="hidden lg:block max-w-[15rem] border-l border-line pl-6 self-end mb-2 hl" style="animation-delay:.6s" aria-label="What a family said">
+          <p class="serif-i text-[1.35rem] leading-[1.35] text-ink">“It feels like having one more person who loves her in the room.”</p>
+          <p class="mt-4 text-[.85rem] font-medium text-ink-faint">Tomas O. <span class="dott-sm inline-block mx-1"></span> son</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CARE INDEX -->
+    <section id="care" class="border-t border-line">
+      <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-24 sm:py-32">
+        <div class="reveal max-w-2xl mb-14 sm:mb-20">
+          <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.18em] text-ink-faint mb-6"><span class="dott-sm"></span> The care we bring home</p>
+          <h2 class="font-extrabold tracking-tightest leading-[1.0] text-[clamp(2.2rem,5vw,3.6rem)]">Built around the person, <span class="serif-i font-light text-ink-soft">not just the task.</span></h2>
+        </div>
+
+        <ul class="border-t border-line">
+          <li>
+            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
+              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Personal care</span>
+              <span class="text-ink-soft text-[1rem] leading-relaxed">Bathing, dressing, mobility and the daily routine — handled with patience and dignity.</span>
+              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
+            </a>
+          </li>
+          <li>
+            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
+              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Skilled nursing</span>
+              <span class="text-ink-soft text-[1rem] leading-relaxed">Wound care, medications and clinical oversight by licensed nurses, in the home.</span>
+              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
+            </a>
+          </li>
+          <li>
+            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
+              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Companionship</span>
+              <span class="text-ink-soft text-[1rem] leading-relaxed">A familiar face for conversation, errands and the simple comfort of company.</span>
+              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
+            </a>
+          </li>
+          <li>
+            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
+              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Memory care</span>
+              <span class="text-ink-soft text-[1rem] leading-relaxed">Calm, routine and safety for those living with dementia, from specially trained caregivers.</span>
+              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
+            </a>
+          </li>
+          <li>
+            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
+              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Recovery at home</span>
+              <span class="text-ink-soft text-[1rem] leading-relaxed">Getting them safely home after surgery or a hospital stay, and keeping them there.</span>
+              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
+            </a>
+          </li>
+          <li>
+            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
+              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Respite</span>
+              <span class="text-ink-soft text-[1rem] leading-relaxed">Rest for family caregivers, while care continues without a single gap.</span>
+              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="bg-ink text-paper">
+      <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-24 sm:py-32">
+        <div class="reveal max-w-2xl mb-16 sm:mb-20">
+          <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.18em] text-paper/55 mb-6"><span class="dott-sm"></span> How it works</p>
+          <h2 class="font-extrabold tracking-tightest leading-[1.0] text-[clamp(2.2rem,5vw,3.6rem)]">From first call to first visit, <span class="serif-i font-light text-paper/70">in days, not weeks.</span></h2>
+        </div>
+
+        <ol class="grid md:grid-cols-3 gap-x-10 gap-y-12">
+          <li class="reveal">
+            <div class="flex items-baseline gap-4 border-b border-paper/15 pb-5">
+              <span class="serif-i text-rose text-[2.6rem] leading-none">01</span>
+              <h3 class="text-[1.5rem] font-bold tracking-tight">We listen</h3>
+            </div>
+            <p class="mt-5 text-paper/70 text-[1rem] leading-relaxed">A free visit — at home or over video — to understand the person, the routine, and what would help most. No cost, no pressure.</p>
+          </li>
+          <li class="reveal" style="transition-delay:.08s">
+            <div class="flex items-baseline gap-4 border-b border-paper/15 pb-5">
+              <span class="serif-i text-rose text-[2.6rem] leading-none">02</span>
+              <h3 class="text-[1.5rem] font-bold tracking-tight">We match</h3>
+            </div>
+            <p class="mt-5 text-paper/70 text-[1rem] leading-relaxed">A caregiver chosen for skill <em>and</em> temperament. You meet them and approve before anything begins.</p>
+          </li>
+          <li class="reveal" style="transition-delay:.16s">
+            <div class="flex items-baseline gap-4 border-b border-paper/15 pb-5">
+              <span class="serif-i text-rose text-[2.6rem] leading-none">03</span>
+              <h3 class="text-[1.5rem] font-bold tracking-tight">We show up</h3>
+            </div>
+            <p class="mt-5 text-paper/70 text-[1rem] leading-relaxed">Care begins, and you follow every visit from your phone — what happened, and how they’re doing.</p>
+          </li>
+        </ol>
+
+        <div class="reveal mt-16">
+          <a href="#book" class="btn-rose inline-flex items-center rounded-full bg-rose-btn px-8 py-4 text-[1.05rem] font-semibold text-white">Start with a free visit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section id="stories" class="border-t border-line">
+      <div class="mx-auto max-w-[1100px] px-6 sm:px-10 py-28 sm:py-36 text-center">
+        <p class="reveal flex items-center justify-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.18em] text-ink-faint mb-10"><span class="dott-sm"></span> A family’s words</p>
+        <blockquote class="reveal serif-i text-[clamp(1.8rem,4.6vw,3.2rem)] leading-[1.28] text-ink">
+          “Caredott gave us our evenings back. We can see that Dad ate, took his medicine, and had a good day — without driving across town to find&nbsp;out.”
+        </blockquote>
+        <figcaption class="reveal mt-10 text-[1rem] font-medium text-ink-soft">Priya M. <span class="dott-sm inline-block mx-1.5"></span> daughter &amp; primary contact</figcaption>
+      </div>
+    </section>
+
+    <!-- WHY (plain commitments, type-led) -->
+    <section class="bg-paper-deep border-y border-line">
+      <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-24 sm:py-28">
+        <h2 class="reveal sr-only">Why families choose Caredott</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">
+          <div class="reveal">
+            <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.16em] text-rose-deep mb-4"><span class="dott-sm"></span> Trust</p>
+            <p class="text-[1.45rem] font-bold tracking-tight leading-snug">Only the top caregivers make it past our vetting.</p>
+            <p class="mt-3 text-ink-soft leading-relaxed">Background checks, license verification and ongoing training — every time, before they meet your family.</p>
+          </div>
+          <div class="reveal" style="transition-delay:.06s">
+            <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.16em] text-rose-deep mb-4"><span class="dott-sm"></span> The person</p>
+            <p class="text-[1.45rem] font-bold tracking-tight leading-snug">A plan that bends to their life, not the other way round.</p>
+            <p class="mt-3 text-ink-soft leading-relaxed">Preferences, history and goals shape the care — and it changes the moment their needs do.</p>
+          </div>
+          <div class="reveal" style="transition-delay:.12s">
+            <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.16em] text-rose-deep mb-4"><span class="dott-sm"></span> Presence</p>
+            <p class="text-[1.45rem] font-bold tracking-tight leading-snug">You see every visit, from wherever you are.</p>
+            <p class="mt-3 text-ink-soft leading-relaxed">Notes, updates and how the day went — so the worry of not knowing simply goes away.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK CTA -->
+    <section id="book">
+      <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-28 sm:py-36">
+        <div class="grid lg:grid-cols-[1.1fr_1fr] gap-14 lg:gap-20 items-start">
+          <div class="reveal">
+            <h2 class="font-extrabold tracking-tightest leading-[0.96] text-[clamp(2.6rem,6vw,4.8rem)]">Let’s find the right person<span class="dott"></span></h2>
+            <p class="serif-i text-ink-soft text-[clamp(1.6rem,4vw,2.6rem)] leading-tight mt-1">for your family.</p>
+            <p class="max-w-md text-[1.1rem] text-ink-soft leading-relaxed mt-8">Book a free, no-obligation visit. A care advisor reaches out within one business day — usually sooner.</p>
+            <p class="mt-8 text-[1.05rem] font-medium">Prefer to talk now? <a href="tel:+18002273368" class="text-rose-deep ul-rose">Call 1-800-CARE-DOT</a></p>
+          </div>
+
+          <div class="reveal">
+            <div class="space-y-5">
+              <div>
+                <label for="name" class="block text-[.9rem] font-semibold mb-2">Your name</label>
+                <input id="name" type="text" autocomplete="name" placeholder="Jordan Rivera" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-rose px-0 py-3 text-[1.15rem] placeholder:text-ink-faint/70 outline-none transition-colors" />
+              </div>
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="phone" class="block text-[.9rem] font-semibold mb-2">Phone</label>
+                  <input id="phone" type="tel" autocomplete="tel" placeholder="(555) 010-2398" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-rose px-0 py-3 text-[1.15rem] placeholder:text-ink-faint/70 outline-none transition-colors" />
+                </div>
+                <div>
+                  <label for="care" class="block text-[.9rem] font-semibold mb-2">Care needed</label>
+                  <select id="care" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-rose px-0 py-3 text-[1.15rem] outline-none transition-colors">
+                    <option>Personal care</option>
+                    <option>Skilled nursing</option>
+                    <option>Companionship</option>
+                    <option>Memory care</option>
+                    <option>Recovery at home</option>
+                    <option>Respite</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+              <button type="button" class="btn-rose w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-rose-btn px-9 py-4 text-[1.05rem] font-semibold text-white mt-3">Book my free visit →</button>
+              <p class="text-[.85rem] text-ink-faint pt-1">Free, no obligation. We’ll never share your details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-line">
+    <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-16">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
+        <div>
+          <a href="#" class="text-[1.7rem] font-extrabold tracking-tightest" aria-label="Caredott home">Caredott<span class="dott-sm align-baseline ml-0.5"></span></a>
+          <p class="mt-3 max-w-xs text-ink-soft leading-relaxed">Compassionate, vetted in-home care — with the transparency families deserve.</p>
+        </div>
+        <nav class="flex flex-wrap gap-x-10 gap-y-3 text-[.98rem] font-medium text-ink-soft" aria-label="Footer">
+          <a href="#care" class="ul-rose hover:text-ink">Care</a>
+          <a href="#how" class="ul-rose hover:text-ink">How it works</a>
+          <a href="#stories" class="ul-rose hover:text-ink">Stories</a>
+          <a href="#book" class="ul-rose hover:text-ink">Book a visit</a>
+          <a href="tel:+18002273368" class="ul-rose hover:text-ink">1-800-CARE-DOT</a>
+        </nav>
+      </div>
+      <div class="mt-12 pt-6 border-t border-line flex flex-col sm:flex-row justify-between gap-3 text-[.85rem] text-ink-faint">
+        <p>© 2026 Caredott. Caring for the people you love.</p>
+        <div class="flex gap-6">
+          <a href="#" class="ul-rose hover:text-ink">Privacy</a>
+          <a href="#" class="ul-rose hover:text-ink">Terms</a>
+          <a href="#" class="ul-rose hover:text-ink">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hdr = document.getElementById('hdr');
+    const onScroll = () => hdr.classList.toggle('nav-scrolled', window.scrollY > 10);
+    onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const io = new IntersectionObserver((es) => {
+        es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+    }
+  </script>
+</body>
+</html>
