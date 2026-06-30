@@ -3,19 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Caredott — Always there. Trusted in-home care for the people you love.</title>
-  <meta name="description" content="Caredott brings background-checked, certified caregivers into the home — matched to the person, not just the task, with every visit visible from your phone. Book a free visit." />
-  <meta name="theme-color" content="#F6F3ED" />
+  <title>Caredott Homecare Services — Compassionate care in your own home | Bangalore &amp; Kerala</title>
+  <meta name="description" content="Caredott Homecare Services brings qualified nurses and caretakers to your home across Bangalore and Kerala — doorstep nursing, mother &amp; baby care, 24/7 caretaker support, wound care and elderly care. Book a free visit." />
+  <meta name="theme-color" content="#14305E" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Caredott — Always there" />
-  <meta property="og:description" content="Trusted in-home caregivers, matched to the person and visible to family every day." />
+  <meta property="og:title" content="Caredott Homecare Services — Always there" />
+  <meta property="og:description" content="Compassionate, qualified in-home care across Bangalore and Kerala. Call Amal K Babu on +91 94968 23200." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Newsreader:ital,opsz,wght@1,6..72,300..500&display=swap" rel="stylesheet" />
 
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","additionalType":"https://schema.org/MedicalBusiness","name":"Caredott","description":"In-home care: personal care, skilled nursing, companionship, memory care, recovery and respite.","telephone":"+1-800-227-3368","areaServed":"United States","priceRange":"$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"2841"}}
+  {
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "additionalType":"https://schema.org/MedicalBusiness",
+    "name":"Caredott Homecare Services",
+    "slogan":"Compassionate Care in Your Own Home",
+    "description":"In-home care across Bangalore and Kerala: doorstep nursing, mother & baby care, 24/7 caretaker support, wound care and elderly & bedridden patient care.",
+    "email":"caredott1@gmail.com",
+    "telephone":"+91-94968-23200",
+    "areaServed":["Bangalore","Kerala"],
+    "address":{"@type":"PostalAddress","addressRegion":"Karnataka & Kerala","addressCountry":"IN"},
+    "priceRange":"$$",
+    "makesOffer":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Doorstep Nursing Assistance"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mother & Baby Care"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"24/7 Qualified Caretaker Support"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Wound Care & Dressing Services"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Grooming & Elderly / Bedridden Patient Care"}}
+    ]
+  }
   </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -28,10 +47,12 @@
             serif: ['Newsreader', 'Georgia', 'serif'],
           },
           colors: {
-            paper:  { DEFAULT: '#F6F3ED', deep: '#EFEAE0' },
-            ink:    { DEFAULT: '#191510', soft: '#5C544A', faint: '#8A8278' },
-            rose:   { DEFAULT: '#C24A5E', deep: '#A8364B', btn: '#B23E52' },
-            line:   '#E1DACC',
+            paper:  { DEFAULT: '#F5F7F3', deep: '#ECF0E9' },
+            ink:    { DEFAULT: '#16294C', soft: '#46566F', faint: '#828FA0' },
+            navy:   { DEFAULT: '#14305E', deep: '#0E2347' },
+            green:  { DEFAULT: '#3E9B45', deep: '#2E7D38', soft: '#E3F0E1' },
+            teal:   '#2BA3C4',
+            line:   '#DFE5DA',
           },
           letterSpacing: { tightest: '-0.045em' },
         },
@@ -41,261 +62,369 @@
 
   <style>
     html { scroll-behavior: smooth; }
-    body { background: #F6F3ED; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    body { background: #F5F7F3; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
     .serif-i { font-family: 'Newsreader', Georgia, serif; font-style: italic; font-weight: 300; }
 
-    /* the dott — brand signature */
-    .dott { display: inline-block; width: .62em; height: .62em; border-radius: 999px; background: #C24A5E; vertical-align: baseline; margin-left: .04em; }
-    .dott-sm { display: inline-block; width: 7px; height: 7px; border-radius: 999px; background: #C24A5E; }
+    /* the dott — brand signature, now brand green */
+    .dott { display:inline-block; width:.6em; height:.6em; border-radius:999px; background:#3E9B45; vertical-align:baseline; margin-left:.05em; }
+    .dott-sm { display:inline-block; width:7px; height:7px; border-radius:999px; background:#3E9B45; }
 
-    /* hero line reveal */
-    .hl { display: block; opacity: 0; transform: translateY(0.5em); animation: hlrise 0.95s cubic-bezier(.22,.7,.2,1) forwards; }
-    @keyframes hlrise { to { opacity: 1; transform: none; } }
+    .hl { display:block; opacity:0; transform:translateY(.5em); animation:hlrise .95s cubic-bezier(.22,.7,.2,1) forwards; }
+    @keyframes hlrise { to { opacity:1; transform:none; } }
 
-    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
-    .reveal.in { opacity: 1; transform: none; }
+    .reveal { opacity:0; transform:translateY(20px); transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in { opacity:1; transform:none; }
 
-    .row-link .arr { opacity: 0; transform: translateX(-6px); transition: opacity .3s ease, transform .3s ease; }
-    .row-link:hover .arr { opacity: 1; transform: none; }
-    .row-link:hover .row-name { color: #A8364B; }
+    .ul-acc { background-image:linear-gradient(#2E7D38,#2E7D38); background-size:0% 1.5px; background-position:0 100%; background-repeat:no-repeat; transition:background-size .35s ease; }
+    .ul-acc:hover { background-size:100% 1.5px; }
 
-    .ul-rose { background-image: linear-gradient(#C24A5E,#C24A5E); background-size: 0% 1.5px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .35s ease; }
-    .ul-rose:hover { background-size: 100% 1.5px; }
+    .nav-wrap { transition:background-color .35s ease, border-color .35s ease; border-bottom:1px solid transparent; }
+    .nav-scrolled { background:rgba(245,247,243,.88); backdrop-filter:blur(12px); border-color:#DFE5DA; }
 
-    .nav-wrap { transition: background-color .35s ease, border-color .35s ease; border-bottom: 1px solid transparent; }
-    .nav-scrolled { background: rgba(246,243,237,.85); backdrop-filter: blur(12px); border-color: #E1DACC; }
+    .btn { transition:transform .25s ease, background-color .25s ease, color .25s ease; }
+    .btn-green:hover { transform:translateY(-2px); background-color:#256630; }
+    .btn-wa:hover { transform:translateY(-2px); }
 
-    .btn-rose { transition: transform .25s ease, background-color .25s ease; }
-    .btn-rose:hover { transform: translateY(-2px); background-color: #A8364B; }
+    .svc:hover .svc-title { color:#2E7D38; }
+    .svc { transition:background-color .3s ease; }
+    .svc:hover { background-color:rgba(62,155,69,.035); }
 
-    :focus-visible { outline: 3px solid #C24A5E; outline-offset: 3px; border-radius: 4px; }
+    .wa-float { box-shadow:0 10px 30px -8px rgba(37,211,102,.5); transition:transform .2s ease; }
+    .wa-float:hover { transform:scale(1.06); }
+
+    :focus-visible { outline:3px solid #3E9B45; outline-offset:3px; border-radius:4px; }
 
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .hl, .reveal { animation: none !important; opacity: 1 !important; transform: none !important; transition: none !important; }
+      html { scroll-behavior:auto; }
+      .hl,.reveal { animation:none !important; opacity:1 !important; transform:none !important; transition:none !important; }
     }
   </style>
 </head>
 
-<body class="font-sans text-ink antialiased selection:bg-rose/20">
+<body class="font-sans text-ink antialiased selection:bg-green/20">
 
-  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-[100] focus:top-4 focus:left-4 focus:bg-ink focus:text-paper focus:px-5 focus:py-3 focus:rounded-full focus:font-semibold">Skip to content</a>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-[100] focus:top-4 focus:left-4 focus:bg-navy focus:text-white focus:px-5 focus:py-3 focus:rounded-full focus:font-semibold">Skip to content</a>
 
   <!-- HEADER -->
-  <header id="hdr" class="nav-wrap fixed top-0 inset-x-0 z-50">
-    <nav class="mx-auto max-w-[1240px] px-6 sm:px-10 h-[76px] flex items-center justify-between" aria-label="Primary">
-      <a href="#" class="text-[1.4rem] font-extrabold tracking-tightest text-ink" aria-label="Caredott home">Caredott<span class="dott-sm align-baseline ml-0.5"></span></a>
+  <header id="hdr" class="nav-wrap fixed top-0 inset-x-0 z-40">
+    <nav class="mx-auto max-w-[1240px] px-5 sm:px-10 h-[74px] flex items-center justify-between gap-4" aria-label="Primary">
+      <a href="#" class="flex items-center gap-2.5" aria-label="Caredott Homecare Services home">
+        <span class="grid place-items-center w-9 h-9 rounded-xl bg-navy" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none">
+            <path d="M12 20s-6.5-3.8-8.6-7.8C2 9.4 3.3 6.4 6.2 6.4c1.8 0 3 1.1 3.8 2.4h4c.8-1.3 2-2.4 3.8-2.4 2.9 0 4.2 3 2.8 5.8C18.5 16.2 12 20 12 20Z" stroke="#2BA3C4" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M9.2 13.2V10l2.8-2.2L14.8 10v3.2H9.2Z" fill="#3E9B45"/>
+          </svg>
+        </span>
+        <span class="leading-none">
+          <span class="block text-[1.2rem] font-extrabold tracking-tightest text-navy">Caredott<span class="dott-sm align-baseline ml-0.5"></span></span>
+          <span class="block text-[.62rem] font-semibold uppercase tracking-[.22em] text-ink-faint mt-0.5">Homecare Services</span>
+        </span>
+      </a>
 
-      <div class="hidden md:flex items-center gap-9 text-[.95rem] font-medium text-ink-soft">
-        <a href="#care" class="ul-rose hover:text-ink transition-colors">Care</a>
-        <a href="#how" class="ul-rose hover:text-ink transition-colors">How it works</a>
-        <a href="#stories" class="ul-rose hover:text-ink transition-colors">Stories</a>
-        <a href="tel:+18002273368" class="ul-rose hover:text-ink transition-colors">1-800-CARE-DOT</a>
+      <div class="hidden md:flex items-center gap-8 text-[.95rem] font-medium text-ink-soft">
+        <a href="#services" class="ul-acc hover:text-ink transition-colors">Services</a>
+        <a href="#how" class="ul-acc hover:text-ink transition-colors">How it works</a>
+        <a href="#why" class="ul-acc hover:text-ink transition-colors">Why us</a>
+        <a href="#contact" class="ul-acc hover:text-ink transition-colors">Contact</a>
       </div>
 
-      <a href="#book" class="btn-rose inline-flex items-center rounded-full bg-rose-btn px-5 py-2.5 text-[.92rem] font-semibold text-white">Book a free visit</a>
+      <div class="flex items-center gap-2.5">
+        <a href="tel:+919496823200" class="hidden lg:inline-flex items-center gap-2 text-[.92rem] font-semibold text-navy ul-acc">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 text-green-deep" fill="none"><path d="M5 4h3l1.5 4.5L7.5 10a11 11 0 0 0 5 5l1.5-2 4.5 1.5V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6a2 2 0 0 1 1-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          +91 94968 23200
+        </a>
+        <a href="#contact" class="btn btn-green inline-flex items-center rounded-full bg-green-deep px-5 py-2.5 text-[.9rem] font-semibold text-white">Book a free visit</a>
+      </div>
     </nav>
   </header>
 
   <main id="main">
 
     <!-- HERO -->
-    <section class="mx-auto max-w-[1240px] px-6 sm:px-10 pt-[150px] sm:pt-[190px] pb-24 sm:pb-32">
-      <div class="grid lg:grid-cols-[1fr_auto] gap-14 lg:gap-16 items-end">
+    <section class="mx-auto max-w-[1240px] px-5 sm:px-10 pt-[140px] sm:pt-[180px] pb-20 sm:pb-28">
+      <div class="grid lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-end">
         <div>
-          <h1 class="font-extrabold tracking-tightest leading-[0.92] text-[clamp(3.4rem,10vw,7.4rem)]">
+          <h1 class="font-extrabold tracking-tightest leading-[0.92] text-[clamp(3rem,9vw,7rem)] text-navy">
             <span class="hl" style="animation-delay:.05s">Always there<span class="dott"></span></span>
-            <span class="hl serif-i text-ink-soft text-[clamp(2.3rem,6.4vw,4.6rem)] leading-[1] block mt-2 sm:mt-3" style="animation-delay:.18s">even when you can’t&nbsp;be.</span>
+            <span class="hl serif-i text-ink-soft text-[clamp(2.1rem,5.8vw,4.3rem)] leading-[1] block mt-2 sm:mt-3" style="animation-delay:.18s">even when you can’t&nbsp;be.</span>
           </h1>
 
-          <p class="hl max-w-xl text-[1.15rem] sm:text-[1.25rem] leading-relaxed text-ink-soft mt-8" style="animation-delay:.32s">
-            Caredott brings trusted, background-checked caregivers into the home — matched to the person, not just the task. And you see every visit, right from your phone.
+          <p class="hl max-w-xl text-[1.12rem] sm:text-[1.22rem] leading-relaxed text-ink-soft mt-8" style="animation-delay:.32s">
+            Caredott brings qualified nurses, caretakers and postpartum specialists into your home across <strong class="font-semibold text-ink">Bangalore &amp; Kerala</strong> — compassionate care, matched to the person, not just the task.
           </p>
 
-          <div class="hl flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mt-9" style="animation-delay:.44s">
-            <a href="#book" class="btn-rose inline-flex items-center justify-center rounded-full bg-rose-btn px-8 py-4 text-[1.05rem] font-semibold text-white">Book a free visit</a>
-            <a href="tel:+18002273368" class="inline-flex items-center gap-2 text-[1.05rem] font-medium text-ink ul-rose self-start sm:self-auto">
-              or call <span class="text-rose-deep">1-800-CARE-DOT</span>
+          <div class="hl flex flex-col sm:flex-row sm:items-center gap-3.5 sm:gap-4 mt-9" style="animation-delay:.44s">
+            <a href="#contact" class="btn btn-green inline-flex items-center justify-center rounded-full bg-green-deep px-8 py-4 text-[1.05rem] font-semibold text-white">Book a free visit</a>
+            <a href="https://wa.me/919846647913" class="btn btn-wa inline-flex items-center justify-center gap-2 rounded-full bg-white border border-line px-6 py-4 text-[1.05rem] font-semibold text-navy hover:border-green/50">
+              <svg viewBox="0 0 24 24" class="w-5 h-5" fill="#25D366"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.8-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.7-1.2-4.4-4-4.5-4.2-.1-.2-1.1-1.4-1.1-2.6 0-1.3.7-1.9.9-2.1.2-.2.5-.3.6-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2 0 .4 0 .5-.1l.8-1c.2-.3.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.6 0 1.4Z"/></svg>
+              WhatsApp us
             </a>
           </div>
 
-          <p class="hl text-[.92rem] text-ink-faint mt-9" style="animation-delay:.52s">
-            <span class="text-rose">★</span> 4.9 from 2,800+ families &nbsp;·&nbsp; Licensed &amp; background-checked caregivers
+          <p class="hl flex flex-wrap items-center gap-x-3 gap-y-1 text-[.92rem] text-ink-faint mt-8" style="animation-delay:.52s">
+            <span class="inline-flex items-center gap-1.5"><span class="dott-sm"></span> Qualified &amp; experienced staff</span>
+            <span aria-hidden="true">·</span>
+            <span>24/7 availability</span>
+            <span aria-hidden="true">·</span>
+            <span>Affordable &amp; reliable</span>
           </p>
         </div>
 
-        <!-- quiet human proof, type only -->
-        <aside class="hidden lg:block max-w-[15rem] border-l border-line pl-6 self-end mb-2 hl" style="animation-delay:.6s" aria-label="What a family said">
-          <p class="serif-i text-[1.35rem] leading-[1.35] text-ink">“It feels like having one more person who loves her in the room.”</p>
-          <p class="mt-4 text-[.85rem] font-medium text-ink-faint">Tomas O. <span class="dott-sm inline-block mx-1"></span> son</p>
+        <aside class="hidden lg:block max-w-[15rem] border-l border-line pl-6 self-end mb-2 hl" style="animation-delay:.6s">
+          <p class="serif-i text-[1.45rem] leading-[1.32] text-navy">“Compassionate care in your own home.”</p>
+          <p class="mt-4 text-[.85rem] font-medium text-ink-faint">Serving Bangalore <span class="dott-sm inline-block mx-1"></span> Kerala</p>
         </aside>
       </div>
     </section>
 
-    <!-- CARE INDEX -->
-    <section id="care" class="border-t border-line">
-      <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-24 sm:py-32">
-        <div class="reveal max-w-2xl mb-14 sm:mb-20">
-          <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.18em] text-ink-faint mb-6"><span class="dott-sm"></span> The care we bring home</p>
-          <h2 class="font-extrabold tracking-tightest leading-[1.0] text-[clamp(2.2rem,5vw,3.6rem)]">Built around the person, <span class="serif-i font-light text-ink-soft">not just the task.</span></h2>
+    <!-- SERVICES -->
+    <section id="services" class="border-t border-line">
+      <div class="mx-auto max-w-[1240px] px-5 sm:px-10 py-20 sm:py-28">
+        <div class="reveal max-w-2xl mb-12 sm:mb-16">
+          <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.18em] text-ink-faint mb-6"><span class="dott-sm"></span> Our services</p>
+          <h2 class="font-extrabold tracking-tightest leading-[1.0] text-navy text-[clamp(2.2rem,5vw,3.6rem)]">Everything care needs, <span class="serif-i font-light text-ink-soft">brought to your door.</span></h2>
         </div>
 
-        <ul class="border-t border-line">
-          <li>
-            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
-              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Personal care</span>
-              <span class="text-ink-soft text-[1rem] leading-relaxed">Bathing, dressing, mobility and the daily routine — handled with patience and dignity.</span>
-              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
-            </a>
-          </li>
-          <li>
-            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
-              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Skilled nursing</span>
-              <span class="text-ink-soft text-[1rem] leading-relaxed">Wound care, medications and clinical oversight by licensed nurses, in the home.</span>
-              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
-            </a>
-          </li>
-          <li>
-            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
-              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Companionship</span>
-              <span class="text-ink-soft text-[1rem] leading-relaxed">A familiar face for conversation, errands and the simple comfort of company.</span>
-              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
-            </a>
-          </li>
-          <li>
-            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
-              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Memory care</span>
-              <span class="text-ink-soft text-[1rem] leading-relaxed">Calm, routine and safety for those living with dementia, from specially trained caregivers.</span>
-              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
-            </a>
-          </li>
-          <li>
-            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
-              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Recovery at home</span>
-              <span class="text-ink-soft text-[1rem] leading-relaxed">Getting them safely home after surgery or a hospital stay, and keeping them there.</span>
-              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
-            </a>
-          </li>
-          <li>
-            <a href="#book" class="row-link group grid sm:grid-cols-[1fr_1.2fr_auto] gap-2 sm:gap-10 items-baseline py-7 sm:py-8 border-b border-line">
-              <span class="row-name font-bold tracking-tight text-[1.7rem] sm:text-[2rem] transition-colors">Respite</span>
-              <span class="text-ink-soft text-[1rem] leading-relaxed">Rest for family caregivers, while care continues without a single gap.</span>
-              <span class="arr text-rose-deep font-semibold justify-self-start sm:justify-self-end whitespace-nowrap">Talk to us →</span>
-            </a>
-          </li>
-        </ul>
+        <div class="border-t border-line">
+
+          <!-- Service -->
+          <article class="svc grid lg:grid-cols-[0.85fr_1.15fr] gap-5 lg:gap-12 py-9 sm:py-11 px-3 sm:px-5 border-b border-line rounded-2xl -mx-3 sm:-mx-5">
+            <div>
+              <h3 class="svc-title font-bold tracking-tight text-[1.65rem] sm:text-[1.9rem] leading-tight text-navy transition-colors">Doorstep nursing assistance</h3>
+              <p class="mt-3 text-ink-soft leading-relaxed">Professional nursing care delivered in the comfort of your home, by trained and experienced staff.</p>
+            </div>
+            <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 content-start">
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Medication administration</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Injection services</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Vital signs monitoring</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Post-surgical care</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Ryle’s tube care</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Catheter care</li>
+            </ul>
+          </article>
+
+          <article class="svc grid lg:grid-cols-[0.85fr_1.15fr] gap-5 lg:gap-12 py-9 sm:py-11 px-3 sm:px-5 border-b border-line rounded-2xl -mx-3 sm:-mx-5">
+            <div>
+              <h3 class="svc-title font-bold tracking-tight text-[1.65rem] sm:text-[1.9rem] leading-tight text-navy transition-colors">Mother &amp; baby care</h3>
+              <p class="mt-3 text-ink-soft leading-relaxed">Compassionate postpartum care for mothers and newborns, with gentle, knowledgeable support.</p>
+            </div>
+            <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 content-start">
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Newborn care</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Mother care after delivery</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Breastfeeding support</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Hygiene &amp; personal care</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Nutrition guidance</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Ayurvedic postpartum support</li>
+            </ul>
+          </article>
+
+          <article class="svc grid lg:grid-cols-[0.85fr_1.15fr] gap-5 lg:gap-12 py-9 sm:py-11 px-3 sm:px-5 border-b border-line rounded-2xl -mx-3 sm:-mx-5">
+            <div>
+              <h3 class="svc-title font-bold tracking-tight text-[1.65rem] sm:text-[1.9rem] leading-tight text-navy transition-colors">24/7 qualified caretaker support</h3>
+              <p class="mt-3 text-ink-soft leading-relaxed">Dedicated caregivers available round the clock for continuous, reliable assistance.</p>
+            </div>
+            <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 content-start">
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Day &amp; night care</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Mobility assistance</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Feeding support</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Medication reminders</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Companionship</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Personal hygiene assistance</li>
+            </ul>
+          </article>
+
+          <article class="svc grid lg:grid-cols-[0.85fr_1.15fr] gap-5 lg:gap-12 py-9 sm:py-11 px-3 sm:px-5 border-b border-line rounded-2xl -mx-3 sm:-mx-5">
+            <div>
+              <h3 class="svc-title font-bold tracking-tight text-[1.65rem] sm:text-[1.9rem] leading-tight text-navy transition-colors">Wound care &amp; dressing</h3>
+              <p class="mt-3 text-ink-soft leading-relaxed">Expert wound management by trained healthcare professionals, with careful follow-up.</p>
+            </div>
+            <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 content-start">
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Surgical wound dressing</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Diabetic wound care</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Pressure sore care</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Infection prevention</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Follow-up monitoring</li>
+            </ul>
+          </article>
+
+          <article class="svc grid lg:grid-cols-[0.85fr_1.15fr] gap-5 lg:gap-12 py-9 sm:py-11 px-3 sm:px-5 border-b border-line rounded-2xl -mx-3 sm:-mx-5">
+            <div>
+              <h3 class="svc-title font-bold tracking-tight text-[1.65rem] sm:text-[1.9rem] leading-tight text-navy transition-colors">Grooming &amp; elderly / bedridden care</h3>
+              <p class="mt-3 text-ink-soft leading-relaxed">Comprehensive day-to-day support for bedridden and elderly patients, with patience and dignity.</p>
+            </div>
+            <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 content-start">
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Bathing assistance</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Grooming &amp; personal hygiene</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Dressing assistance</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Toileting support</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Positioning &amp; turning</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Exercise &amp; mobility assistance</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Hair &amp; skin care</li>
+              <li class="flex items-start gap-2.5 text-ink-soft"><span class="text-green mt-0.5 shrink-0" aria-hidden="true">✓</span>Feeding assistance</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <p class="reveal mt-10 text-ink-soft">Not sure which fits? <a href="#contact" class="text-green-deep font-semibold ul-acc">Tell us about your situation</a> and we’ll guide you.</p>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="how" class="bg-ink text-paper">
-      <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-24 sm:py-32">
-        <div class="reveal max-w-2xl mb-16 sm:mb-20">
-          <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.18em] text-paper/55 mb-6"><span class="dott-sm"></span> How it works</p>
-          <h2 class="font-extrabold tracking-tightest leading-[1.0] text-[clamp(2.2rem,5vw,3.6rem)]">From first call to first visit, <span class="serif-i font-light text-paper/70">in days, not weeks.</span></h2>
+    <section id="how" class="bg-navy text-white">
+      <div class="mx-auto max-w-[1240px] px-5 sm:px-10 py-20 sm:py-28">
+        <div class="reveal max-w-2xl mb-14 sm:mb-18">
+          <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.18em] text-white/55 mb-6"><span class="dott-sm"></span> How it works</p>
+          <h2 class="font-extrabold tracking-tightest leading-[1.0] text-[clamp(2.2rem,5vw,3.6rem)]">From first call to first visit, <span class="serif-i font-light text-white/70">in days, not weeks.</span></h2>
         </div>
 
         <ol class="grid md:grid-cols-3 gap-x-10 gap-y-12">
           <li class="reveal">
-            <div class="flex items-baseline gap-4 border-b border-paper/15 pb-5">
-              <span class="serif-i text-rose text-[2.6rem] leading-none">01</span>
+            <div class="flex items-baseline gap-4 border-b border-white/15 pb-5">
+              <span class="serif-i text-green text-[2.6rem] leading-none">01</span>
               <h3 class="text-[1.5rem] font-bold tracking-tight">We listen</h3>
             </div>
-            <p class="mt-5 text-paper/70 text-[1rem] leading-relaxed">A free visit — at home or over video — to understand the person, the routine, and what would help most. No cost, no pressure.</p>
+            <p class="mt-5 text-white/70 leading-relaxed">A free visit to understand the patient, the routine, and what care would help most. No cost, no obligation.</p>
           </li>
           <li class="reveal" style="transition-delay:.08s">
-            <div class="flex items-baseline gap-4 border-b border-paper/15 pb-5">
-              <span class="serif-i text-rose text-[2.6rem] leading-none">02</span>
+            <div class="flex items-baseline gap-4 border-b border-white/15 pb-5">
+              <span class="serif-i text-green text-[2.6rem] leading-none">02</span>
               <h3 class="text-[1.5rem] font-bold tracking-tight">We match</h3>
             </div>
-            <p class="mt-5 text-paper/70 text-[1rem] leading-relaxed">A caregiver chosen for skill <em>and</em> temperament. You meet them and approve before anything begins.</p>
+            <p class="mt-5 text-white/70 leading-relaxed">A qualified nurse or caretaker chosen for skill <em>and</em> temperament, with a care plan made for the person.</p>
           </li>
           <li class="reveal" style="transition-delay:.16s">
-            <div class="flex items-baseline gap-4 border-b border-paper/15 pb-5">
-              <span class="serif-i text-rose text-[2.6rem] leading-none">03</span>
-              <h3 class="text-[1.5rem] font-bold tracking-tight">We show up</h3>
+            <div class="flex items-baseline gap-4 border-b border-white/15 pb-5">
+              <span class="serif-i text-green text-[2.6rem] leading-none">03</span>
+              <h3 class="text-[1.5rem] font-bold tracking-tight">We care</h3>
             </div>
-            <p class="mt-5 text-paper/70 text-[1rem] leading-relaxed">Care begins, and you follow every visit from your phone — what happened, and how they’re doing.</p>
+            <p class="mt-5 text-white/70 leading-relaxed">Care begins at home — reliable, round-the-clock if needed, and always a call or message away.</p>
           </li>
         </ol>
 
-        <div class="reveal mt-16">
-          <a href="#book" class="btn-rose inline-flex items-center rounded-full bg-rose-btn px-8 py-4 text-[1.05rem] font-semibold text-white">Start with a free visit</a>
+        <div class="reveal mt-14 flex flex-col sm:flex-row gap-3.5">
+          <a href="#contact" class="btn btn-green inline-flex items-center justify-center rounded-full bg-green-deep px-8 py-4 text-[1.05rem] font-semibold text-white">Book a free visit</a>
+          <a href="tel:+919496823200" class="btn inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-8 py-4 text-[1.05rem] font-semibold text-white hover:bg-white/10">
+            <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none"><path d="M5 4h3l1.5 4.5L7.5 10a11 11 0 0 0 5 5l1.5-2 4.5 1.5V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6a2 2 0 0 1 1-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            +91 94968 23200
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- STORY -->
-    <section id="stories" class="border-t border-line">
-      <div class="mx-auto max-w-[1100px] px-6 sm:px-10 py-28 sm:py-36 text-center">
-        <p class="reveal flex items-center justify-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.18em] text-ink-faint mb-10"><span class="dott-sm"></span> A family’s words</p>
-        <blockquote class="reveal serif-i text-[clamp(1.8rem,4.6vw,3.2rem)] leading-[1.28] text-ink">
-          “Caredott gave us our evenings back. We can see that Dad ate, took his medicine, and had a good day — without driving across town to find&nbsp;out.”
-        </blockquote>
-        <figcaption class="reveal mt-10 text-[1rem] font-medium text-ink-soft">Priya M. <span class="dott-sm inline-block mx-1.5"></span> daughter &amp; primary contact</figcaption>
-      </div>
-    </section>
+    <!-- WHY US -->
+    <section id="why" class="border-b border-line">
+      <div class="mx-auto max-w-[1240px] px-5 sm:px-10 py-20 sm:py-24">
+        <h2 class="reveal font-extrabold tracking-tightest leading-[1.0] text-navy text-[clamp(2rem,4.5vw,3.2rem)] max-w-2xl mb-14">Why families across Kerala &amp; Bangalore choose Caredott<span class="dott"></span></h2>
 
-    <!-- WHY (plain commitments, type-led) -->
-    <section class="bg-paper-deep border-y border-line">
-      <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-24 sm:py-28">
-        <h2 class="reveal sr-only">Why families choose Caredott</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
           <div class="reveal">
-            <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.16em] text-rose-deep mb-4"><span class="dott-sm"></span> Trust</p>
-            <p class="text-[1.45rem] font-bold tracking-tight leading-snug">Only the top caregivers make it past our vetting.</p>
-            <p class="mt-3 text-ink-soft leading-relaxed">Background checks, license verification and ongoing training — every time, before they meet your family.</p>
+            <p class="flex items-center gap-2.5 text-[.8rem] font-semibold uppercase tracking-[.16em] text-green-deep mb-3"><span class="dott-sm"></span> Qualified staff</p>
+            <p class="text-[1.3rem] font-bold tracking-tight leading-snug text-navy">Trained, experienced nurses and caretakers.</p>
+            <p class="mt-2.5 text-ink-soft leading-relaxed">Real clinical skill and the warmth to go with it — people you can trust in your home.</p>
           </div>
-          <div class="reveal" style="transition-delay:.06s">
-            <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.16em] text-rose-deep mb-4"><span class="dott-sm"></span> The person</p>
-            <p class="text-[1.45rem] font-bold tracking-tight leading-snug">A plan that bends to their life, not the other way round.</p>
-            <p class="mt-3 text-ink-soft leading-relaxed">Preferences, history and goals shape the care — and it changes the moment their needs do.</p>
+          <div class="reveal" style="transition-delay:.05s">
+            <p class="flex items-center gap-2.5 text-[.8rem] font-semibold uppercase tracking-[.16em] text-green-deep mb-3"><span class="dott-sm"></span> Home-based</p>
+            <p class="text-[1.3rem] font-bold tracking-tight leading-snug text-navy">Compassionate care, in familiar surroundings.</p>
+            <p class="mt-2.5 text-ink-soft leading-relaxed">Healing happens best at home. We bring the care to them, so they never have to leave it.</p>
           </div>
-          <div class="reveal" style="transition-delay:.12s">
-            <p class="flex items-center gap-2.5 text-[.82rem] font-semibold uppercase tracking-[.16em] text-rose-deep mb-4"><span class="dott-sm"></span> Presence</p>
-            <p class="text-[1.45rem] font-bold tracking-tight leading-snug">You see every visit, from wherever you are.</p>
-            <p class="mt-3 text-ink-soft leading-relaxed">Notes, updates and how the day went — so the worry of not knowing simply goes away.</p>
+          <div class="reveal" style="transition-delay:.1s">
+            <p class="flex items-center gap-2.5 text-[.8rem] font-semibold uppercase tracking-[.16em] text-green-deep mb-3"><span class="dott-sm"></span> Around the clock</p>
+            <p class="text-[1.3rem] font-bold tracking-tight leading-snug text-navy">24/7 availability when you need it.</p>
+            <p class="mt-2.5 text-ink-soft leading-relaxed">Day or night, short visits or continuous care — support that fits the situation.</p>
+          </div>
+          <div class="reveal" style="transition-delay:.05s">
+            <p class="flex items-center gap-2.5 text-[.8rem] font-semibold uppercase tracking-[.16em] text-green-deep mb-3"><span class="dott-sm"></span> Personalized</p>
+            <p class="text-[1.3rem] font-bold tracking-tight leading-snug text-navy">A care plan made for the person.</p>
+            <p class="mt-2.5 text-ink-soft leading-relaxed">Built around their needs and routine, and adjusted as things change.</p>
+          </div>
+          <div class="reveal" style="transition-delay:.1s">
+            <p class="flex items-center gap-2.5 text-[.8rem] font-semibold uppercase tracking-[.16em] text-green-deep mb-3"><span class="dott-sm"></span> Affordable</p>
+            <p class="text-[1.3rem] font-bold tracking-tight leading-snug text-navy">Reliable care that respects your budget.</p>
+            <p class="mt-2.5 text-ink-soft leading-relaxed">Clear, fair pricing and dependable service — no surprises.</p>
+          </div>
+          <div class="reveal" style="transition-delay:.15s">
+            <p class="flex items-center gap-2.5 text-[.8rem] font-semibold uppercase tracking-[.16em] text-green-deep mb-3"><span class="dott-sm"></span> Doorstep</p>
+            <p class="text-[1.3rem] font-bold tracking-tight leading-snug text-navy">We come to you, across Bangalore &amp; Kerala.</p>
+            <p class="mt-2.5 text-ink-soft leading-relaxed">Care, comfort and compassion, brought right to your doorstep.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BOOK CTA -->
-    <section id="book">
-      <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-28 sm:py-36">
-        <div class="grid lg:grid-cols-[1.1fr_1fr] gap-14 lg:gap-20 items-start">
+    <!-- SLOGAN STATEMENT -->
+    <section class="bg-paper-deep">
+      <div class="mx-auto max-w-[1000px] px-5 sm:px-10 py-24 sm:py-32 text-center">
+        <p class="reveal serif-i text-[clamp(1.9rem,5vw,3.4rem)] leading-[1.25] text-navy">
+          We bring care, comfort &amp; compassion<br class="hidden sm:block" /> to your&nbsp;doorstep<span class="dott"></span>
+        </p>
+        <p class="reveal mt-6 text-ink-soft">Serving Bangalore &amp; Kerala</p>
+      </div>
+    </section>
+
+    <!-- CONTACT / BOOK -->
+    <section id="contact" class="border-t border-line">
+      <div class="mx-auto max-w-[1240px] px-5 sm:px-10 py-24 sm:py-32">
+        <div class="grid lg:grid-cols-[1fr_1fr] gap-14 lg:gap-20 items-start">
+
           <div class="reveal">
-            <h2 class="font-extrabold tracking-tightest leading-[0.96] text-[clamp(2.6rem,6vw,4.8rem)]">Let’s find the right person<span class="dott"></span></h2>
-            <p class="serif-i text-ink-soft text-[clamp(1.6rem,4vw,2.6rem)] leading-tight mt-1">for your family.</p>
-            <p class="max-w-md text-[1.1rem] text-ink-soft leading-relaxed mt-8">Book a free, no-obligation visit. A care advisor reaches out within one business day — usually sooner.</p>
-            <p class="mt-8 text-[1.05rem] font-medium">Prefer to talk now? <a href="tel:+18002273368" class="text-rose-deep ul-rose">Call 1-800-CARE-DOT</a></p>
+            <h2 class="font-extrabold tracking-tightest leading-[0.96] text-navy text-[clamp(2.4rem,5.5vw,4.2rem)]">Book a free visit<span class="dott"></span></h2>
+            <p class="max-w-md text-[1.1rem] text-ink-soft leading-relaxed mt-7">Tell us what you need and we’ll arrange a free, no-obligation home assessment. Or reach us directly — we’re happy to talk it through.</p>
+
+            <dl class="mt-10 space-y-5 text-[1.02rem]">
+              <div class="flex items-start gap-4">
+                <span class="grid place-items-center w-10 h-10 rounded-xl bg-green-soft text-green-deep shrink-0" aria-hidden="true"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none"><path d="M5 4h3l1.5 4.5L7.5 10a11 11 0 0 0 5 5l1.5-2 4.5 1.5V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6a2 2 0 0 1 1-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+                <div><dt class="text-[.82rem] font-semibold uppercase tracking-wide text-ink-faint">Call — Amal K Babu</dt><dd class="font-semibold text-navy mt-0.5"><a href="tel:+919496823200" class="ul-acc">+91 94968 23200</a></dd></div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="grid place-items-center w-10 h-10 rounded-xl bg-green-soft text-green-deep shrink-0" aria-hidden="true"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="#25D366"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.8-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.7-1.2-4.4-4-4.5-4.2-.1-.2-1.1-1.4-1.1-2.6 0-1.3.7-1.9.9-2.1.2-.2.5-.3.6-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2 0 .4 0 .5-.1l.8-1c.2-.3.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.6 0 1.4Z"/></svg></span>
+                <div><dt class="text-[.82rem] font-semibold uppercase tracking-wide text-ink-faint">WhatsApp</dt><dd class="font-semibold text-navy mt-0.5"><a href="https://wa.me/919846647913" class="ul-acc">+91 98466 47913</a></dd></div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="grid place-items-center w-10 h-10 rounded-xl bg-green-soft text-green-deep shrink-0" aria-hidden="true"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <div><dt class="text-[.82rem] font-semibold uppercase tracking-wide text-ink-faint">Email</dt><dd class="font-semibold text-navy mt-0.5"><a href="mailto:caredott1@gmail.com" class="ul-acc">caredott1@gmail.com</a></dd></div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="grid place-items-center w-10 h-10 rounded-xl bg-green-soft text-green-deep shrink-0" aria-hidden="true"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none"><path d="M12 21s-6-5.3-6-10a6 6 0 1 1 12 0c0 4.7-6 10-6 10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.2" stroke="currentColor" stroke-width="1.6"/></svg></span>
+                <div><dt class="text-[.82rem] font-semibold uppercase tracking-wide text-ink-faint">Service area</dt><dd class="font-semibold text-navy mt-0.5">Bangalore &amp; Kerala</dd></div>
+              </div>
+            </dl>
           </div>
 
           <div class="reveal">
             <div class="space-y-5">
               <div>
-                <label for="name" class="block text-[.9rem] font-semibold mb-2">Your name</label>
-                <input id="name" type="text" autocomplete="name" placeholder="Jordan Rivera" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-rose px-0 py-3 text-[1.15rem] placeholder:text-ink-faint/70 outline-none transition-colors" />
+                <label for="name" class="block text-[.9rem] font-semibold mb-2 text-navy">Your name</label>
+                <input id="name" type="text" autocomplete="name" placeholder="e.g. Anu Menon" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-green px-0 py-3 text-[1.15rem] placeholder:text-ink-faint/70 outline-none transition-colors" />
               </div>
               <div class="grid sm:grid-cols-2 gap-5">
                 <div>
-                  <label for="phone" class="block text-[.9rem] font-semibold mb-2">Phone</label>
-                  <input id="phone" type="tel" autocomplete="tel" placeholder="(555) 010-2398" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-rose px-0 py-3 text-[1.15rem] placeholder:text-ink-faint/70 outline-none transition-colors" />
+                  <label for="phone" class="block text-[.9rem] font-semibold mb-2 text-navy">Phone</label>
+                  <input id="phone" type="tel" autocomplete="tel" placeholder="+91 9XXXX XXXXX" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-green px-0 py-3 text-[1.15rem] placeholder:text-ink-faint/70 outline-none transition-colors" />
                 </div>
                 <div>
-                  <label for="care" class="block text-[.9rem] font-semibold mb-2">Care needed</label>
-                  <select id="care" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-rose px-0 py-3 text-[1.15rem] outline-none transition-colors">
-                    <option>Personal care</option>
-                    <option>Skilled nursing</option>
-                    <option>Companionship</option>
-                    <option>Memory care</option>
-                    <option>Recovery at home</option>
-                    <option>Respite</option>
-                    <option>Not sure yet</option>
-                  </select>
+                  <label for="city" class="block text-[.9rem] font-semibold mb-2 text-navy">City</label>
+                  <input id="city" type="text" placeholder="Bangalore / Kochi…" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-green px-0 py-3 text-[1.15rem] placeholder:text-ink-faint/70 outline-none transition-colors" />
                 </div>
               </div>
-              <button type="button" class="btn-rose w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-rose-btn px-9 py-4 text-[1.05rem] font-semibold text-white mt-3">Book my free visit →</button>
+              <div>
+                <label for="care" class="block text-[.9rem] font-semibold mb-2 text-navy">Care needed</label>
+                <select id="care" class="w-full bg-transparent border-0 border-b-2 border-line focus:border-green px-0 py-3 text-[1.15rem] outline-none transition-colors">
+                  <option>Doorstep nursing assistance</option>
+                  <option>Mother &amp; baby care</option>
+                  <option>24/7 qualified caretaker support</option>
+                  <option>Wound care &amp; dressing</option>
+                  <option>Grooming &amp; elderly / bedridden care</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                <button type="button" class="btn btn-green inline-flex items-center justify-center rounded-full bg-green-deep px-8 py-4 text-[1.05rem] font-semibold text-white">Request my free visit</button>
+                <a href="https://wa.me/919846647913" class="btn btn-wa inline-flex items-center justify-center gap-2 rounded-full border border-line px-7 py-4 text-[1.05rem] font-semibold text-navy hover:border-green/50">
+                  <svg viewBox="0 0 24 24" class="w-5 h-5" fill="#25D366"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.8-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.7-1.2-4.4-4-4.5-4.2-.1-.2-1.1-1.4-1.1-2.6 0-1.3.7-1.9.9-2.1.2-.2.5-.3.6-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2 0 .4 0 .5-.1l.8-1c.2-.3.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.6 0 1.4Z"/></svg>
+                  Chat on WhatsApp
+                </a>
+              </div>
               <p class="text-[.85rem] text-ink-faint pt-1">Free, no obligation. We’ll never share your details.</p>
             </div>
           </div>
@@ -305,31 +434,58 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-t border-line">
-    <div class="mx-auto max-w-[1240px] px-6 sm:px-10 py-16">
-      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
+  <footer class="bg-navy text-white/75">
+    <div class="mx-auto max-w-[1240px] px-5 sm:px-10 py-16">
+      <div class="grid gap-10 md:grid-cols-[1.4fr_1fr_1.2fr]">
         <div>
-          <a href="#" class="text-[1.7rem] font-extrabold tracking-tightest" aria-label="Caredott home">Caredott<span class="dott-sm align-baseline ml-0.5"></span></a>
-          <p class="mt-3 max-w-xs text-ink-soft leading-relaxed">Compassionate, vetted in-home care — with the transparency families deserve.</p>
+          <a href="#" class="flex items-center gap-2.5" aria-label="Caredott Homecare Services home">
+            <span class="grid place-items-center w-10 h-10 rounded-xl bg-white/10" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
+                <path d="M12 20s-6.5-3.8-8.6-7.8C2 9.4 3.3 6.4 6.2 6.4c1.8 0 3 1.1 3.8 2.4h4c.8-1.3 2-2.4 3.8-2.4 2.9 0 4.2 3 2.8 5.8C18.5 16.2 12 20 12 20Z" stroke="#5FC4DE" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M9.2 13.2V10l2.8-2.2L14.8 10v3.2H9.2Z" fill="#5FBF63"/>
+              </svg>
+            </span>
+            <span class="leading-none">
+              <span class="block text-[1.25rem] font-extrabold tracking-tightest text-white">Caredott<span class="dott-sm align-baseline ml-0.5"></span></span>
+              <span class="block text-[.6rem] font-semibold uppercase tracking-[.22em] text-white/50 mt-0.5">Homecare Services</span>
+            </span>
+          </a>
+          <p class="serif-i mt-5 text-[1.15rem] text-white/85">Compassionate care in your own home.</p>
+          <p class="mt-3 text-[.92rem] text-white/55">Serving Bangalore &amp; Kerala</p>
         </div>
-        <nav class="flex flex-wrap gap-x-10 gap-y-3 text-[.98rem] font-medium text-ink-soft" aria-label="Footer">
-          <a href="#care" class="ul-rose hover:text-ink">Care</a>
-          <a href="#how" class="ul-rose hover:text-ink">How it works</a>
-          <a href="#stories" class="ul-rose hover:text-ink">Stories</a>
-          <a href="#book" class="ul-rose hover:text-ink">Book a visit</a>
-          <a href="tel:+18002273368" class="ul-rose hover:text-ink">1-800-CARE-DOT</a>
+
+        <nav aria-label="Footer">
+          <h2 class="text-[.75rem] font-bold uppercase tracking-[.18em] text-white/45 mb-4">Explore</h2>
+          <ul class="space-y-2.5 text-[.96rem]">
+            <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="#how" class="hover:text-white transition-colors">How it works</a></li>
+            <li><a href="#why" class="hover:text-white transition-colors">Why us</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Book a free visit</a></li>
+          </ul>
         </nav>
-      </div>
-      <div class="mt-12 pt-6 border-t border-line flex flex-col sm:flex-row justify-between gap-3 text-[.85rem] text-ink-faint">
-        <p>© 2026 Caredott. Caring for the people you love.</p>
-        <div class="flex gap-6">
-          <a href="#" class="ul-rose hover:text-ink">Privacy</a>
-          <a href="#" class="ul-rose hover:text-ink">Terms</a>
-          <a href="#" class="ul-rose hover:text-ink">Accessibility</a>
+
+        <div>
+          <h2 class="text-[.75rem] font-bold uppercase tracking-[.18em] text-white/45 mb-4">Get in touch</h2>
+          <ul class="space-y-2.5 text-[.96rem]">
+            <li><a href="tel:+919496823200" class="hover:text-white transition-colors">Call Amal K Babu — +91 94968 23200</a></li>
+            <li><a href="https://wa.me/919846647913" class="hover:text-white transition-colors">WhatsApp — +91 98466 47913</a></li>
+            <li><a href="mailto:caredott1@gmail.com" class="hover:text-white transition-colors">caredott1@gmail.com</a></li>
+            <li>Bangalore &amp; Kerala</li>
+          </ul>
         </div>
+      </div>
+
+      <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-[.85rem] text-white/55">
+        <p>© 2026 Caredott Homecare Services. All rights reserved.</p>
+        <p>We bring care, comfort &amp; compassion to your doorstep.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919846647913" class="wa-float fixed bottom-5 right-5 z-50 grid place-items-center w-14 h-14 rounded-full bg-[#25D366]" aria-label="Chat with Caredott on WhatsApp">
+    <svg viewBox="0 0 24 24" class="w-7 h-7" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.6 4.8-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.7-1.2-4.4-4-4.5-4.2-.1-.2-1.1-1.4-1.1-2.6 0-1.3.7-1.9.9-2.1.2-.2.5-.3.6-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2 0 .4 0 .5-.1l.8-1c.2-.3.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.6 0 1.4Z"/></svg>
+  </a>
 
   <script>
     const hdr = document.getElementById('hdr');
